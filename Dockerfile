@@ -14,7 +14,7 @@ RUN ./strapi/docker-entrypoint.sh
 
 EXPOSE 1337
 
-ENV NODE_ENV production
+ENV NODE_ENV production 
 
 # CMD ["yarn", "start"]
 

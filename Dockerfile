@@ -9,10 +9,12 @@ RUN yarn install
 
 COPY . .
 
-RUN yarn build
+# RUN yarn build
+RUN ./strapi/docker-entrypoint.sh
 
 EXPOSE 1337
 
 ENV NODE_ENV production
 
-CMD ["yarn", "start"]
+# CMD ["yarn", "start"]
+

@@ -1,5 +1,6 @@
 FROM strapi/base
 
+RUN yarn global add strapi@3.0.0-beta.18.2
 WORKDIR /my-path
 
 COPY ./package.json ./
